@@ -1,0 +1,13 @@
+.superContenedor{
+    display: grid;
+    grid-template-areas: "overlay";
+    .externo {
+        grid-area: overlay;
+        z-index: 1;
+    }
+    .principal{
+        display: grid;
+        grid-column: 1;
+        grid-row: 1;
+    }
+}
