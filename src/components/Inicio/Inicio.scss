@@ -1,0 +1,16 @@
+.sinOpcion{
+    display: grid;
+    .contenidoSinOpcion{
+        align-self: center;
+        justify-self: center;
+        text-align: center;
+        h3{
+            text-align: center;
+            padding: 15px;
+        }       
+        img{
+            width: 60%;
+            padding: 15px;
+        }
+    }
+}

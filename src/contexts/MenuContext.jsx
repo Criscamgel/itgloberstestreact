@@ -9,6 +9,7 @@ export const MenuProvider = (props) => {
     return (
         <MenuContext.Provider
             value={{
+                aerolineaContext,
                 setAerolineaContext  
             }}
         >
