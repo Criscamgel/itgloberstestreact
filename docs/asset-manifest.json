@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/Criscamgel/itgloberstestreact/static/css/main.4041f4ba.chunk.css",
+    "main.js": "/Criscamgel/itgloberstestreact/static/js/main.b642d861.chunk.js",
+    "main.js.map": "/Criscamgel/itgloberstestreact/static/js/main.b642d861.chunk.js.map",
+    "runtime-main.js": "/Criscamgel/itgloberstestreact/static/js/runtime-main.689a6779.js",
+    "runtime-main.js.map": "/Criscamgel/itgloberstestreact/static/js/runtime-main.689a6779.js.map",
+    "static/css/2.0296ed38.chunk.css": "/Criscamgel/itgloberstestreact/static/css/2.0296ed38.chunk.css",
+    "static/js/2.25683b8a.chunk.js": "/Criscamgel/itgloberstestreact/static/js/2.25683b8a.chunk.js",
+    "static/js/2.25683b8a.chunk.js.map": "/Criscamgel/itgloberstestreact/static/js/2.25683b8a.chunk.js.map",
+    "static/js/3.7fb78d4e.chunk.js": "/Criscamgel/itgloberstestreact/static/js/3.7fb78d4e.chunk.js",
+    "static/js/3.7fb78d4e.chunk.js.map": "/Criscamgel/itgloberstestreact/static/js/3.7fb78d4e.chunk.js.map",
+    "index.html": "/Criscamgel/itgloberstestreact/index.html",
+    "static/css/2.0296ed38.chunk.css.map": "/Criscamgel/itgloberstestreact/static/css/2.0296ed38.chunk.css.map",
+    "static/css/main.4041f4ba.chunk.css.map": "/Criscamgel/itgloberstestreact/static/css/main.4041f4ba.chunk.css.map",
+    "static/js/2.25683b8a.chunk.js.LICENSE.txt": "/Criscamgel/itgloberstestreact/static/js/2.25683b8a.chunk.js.LICENSE.txt",
+    "static/media/aerolineas.98223859.png": "/Criscamgel/itgloberstestreact/static/media/aerolineas.98223859.png",
+    "static/media/font-awesome.min.css": "/Criscamgel/itgloberstestreact/static/media/fontawesome-webfont.f691f37e.woff"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.689a6779.js",
+    "static/css/2.0296ed38.chunk.css",
+    "static/js/2.25683b8a.chunk.js",
+    "static/css/main.4041f4ba.chunk.css",
+    "static/js/main.b642d861.chunk.js"
+  ]
+}
