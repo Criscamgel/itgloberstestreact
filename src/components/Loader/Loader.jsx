@@ -13,13 +13,9 @@ export const Loader = () => {
 
     return (
         <>
-          { 
-            !show ?
-            <div className="Loader">
+            <div className={ !show ? 'Loader fade-in' : 'Loader fade-out'  }>
                 <div className="loader"></div>
-            </div> :
-            null    
-          }  
+            </div>
         </>
     )
 }
