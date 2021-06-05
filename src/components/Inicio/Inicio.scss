@@ -13,4 +13,25 @@
             padding: 15px;
         }
     }
+
+}
+
+.conOpcion{
+    display: grid;
+    grid-template-columns: 1fr;
+    .contenidoConOpcion{
+        display: grid;
+        grid-template-rows: auto;
+        padding: 15px;
+        grid-column: 1;
+
+        p{
+            text-align: center;
+            b{
+                font-size: 20px;
+            }
+        }
+        
+    }
+
 }

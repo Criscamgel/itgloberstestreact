@@ -2,6 +2,7 @@ import React, { useContext } from 'react';
 import { MenuContext } from '../../contexts/MenuContext';
 import './Inicio.scss';
 import aerolineas from '../../images/aerolineas.png';
+import { Formulario } from '../Formulario/Formulario';
 
 export const Inicio = () => {
 
@@ -18,7 +19,12 @@ export const Inicio = () => {
           </div>
             :
           <div className="conOpcion">
-            <h2>Bienvenido a {aerolineaContext} </h2>
+              <div className="contenidoConOpcion">
+                <p>“Hola, bienvenido, sabemos que quieres viajar con <b>{aerolineaContext}</b>, por favor
+                diligencia el siguiente formulario: </p>
+              </div>
+              <hr />
+              <Formulario />
           </div>        
           }
          </ div>
