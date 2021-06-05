@@ -6,7 +6,6 @@ import { FormContext } from '../../contexts/FormContext';
 
 export const Formulario = () => {
 
-    let formularioValido = true;
     const { setDatos, setShowModal } = useContext(FormContext);
     const [msgError, setMsgError] = useState({
         nombre: "",
@@ -27,20 +26,15 @@ export const Formulario = () => {
     const submitLogin = (e) => {
         e.preventDefault();
         validarCampos();
-        enviarDatos();
+        validarCampos() && enviarDatos();
     }
 
     const enviarDatos = () => {
-
-        console.log(formularioValido);
-        if( formularioValido ){
 
             setDatos(datosForm);
             setShowModal(true);
             console.log(datosForm);
             reset();
-
-        }
     }
 
     const validarCampos = () => {
@@ -67,8 +61,8 @@ export const Formulario = () => {
         setMsgError({
             ...mensajesError
         })
-        
-        formularioValido = !Object.values(mensajesError).some(v => v);
+
+        return !Object.values(mensajesError).some(v => v);
     }
 
     return (
