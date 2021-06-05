@@ -1,22 +1,32 @@
-@import '../../scss/_variables.scss';
+@import '../../scss/variables';
 @import '../../scss/mixins';
 
-ul{
-    list-style-type: none;
-    display: grid;
-    grid-template-rows: auto;
+.Menu{
+    height: 100vh;
     background-color: $dark;
-    padding: 15px;
     @include desktopFull(){
-        grid-template-columns: repeat(10, 1fr);
+        height: auto;
     }
     @include laptopDesktop(){
-        grid-template-columns: repeat(10, 1fr);
+        height: auto;
     }
-    li{
-        align-self: center;
-        justify-self: center;
-        cursor: pointer;
-        color: white;
+    ul{
+        list-style-type: none;
+        display: grid;
+        grid-template-rows: auto;
+        padding: 15px;
+        grid-gap: 15px;
+        @include desktopFull(){
+            grid-template-columns: repeat(10, 1fr);
+        }
+        @include laptopDesktop(){
+            grid-template-columns: repeat(10, 1fr);
+        }
+        li{
+            align-self: center;
+            justify-self: center;
+            cursor: pointer;
+            color: white;
+        }
     }
 }

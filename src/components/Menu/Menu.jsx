@@ -1,10 +1,13 @@
 import axios from 'axios';
-import React, { useEffect, useState } from 'react';
+import React, { useContext, useEffect, useState } from 'react';
+import { MenuContext } from '../../contexts/MenuContext';
 import './Menu.scss';
 
 export const Menu = () => {
 
   const [menus, setMenu] = useState([]);
+
+  const { setAerolineaContext } = useContext(MenuContext);
 
   useEffect(() => {
     getMenus();
@@ -17,15 +20,19 @@ export const Menu = () => {
   }
 
   return (
-    <>
-      {<ul>
+    <div className="Menu">
+      <ul>
         {
         menus.map( menu => {
-          return <li key={ menu.id }> { menu.name } </li>
+          return <li 
+                  key={ menu.id } 
+                  onClick={() => {
+                    setAerolineaContext(menu.name)
+                  }} > { menu.name } </li>
         })  
         }
-      </ul>}
-    </>
+      </ul>
+    </div>
   )
 }
 

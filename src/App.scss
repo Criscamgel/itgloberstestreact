@@ -1,13 +1,23 @@
+@import './scss/mixins';
+@import './scss/variables';
+
 .superContenedor{
     display: grid;
     grid-template-areas: "overlay";
     .externo {
         grid-area: overlay;
-        z-index: 1;
     }
     .principal{
         display: grid;
+        grid-template-columns: 2fr 10fr;
         grid-column: 1;
         grid-row: 1;
+
+        @include desktopFull(){
+            grid-template-columns: none;
+        }
+        @include laptopDesktop(){
+            grid-template-columns: none;
+        }
     }
 }
