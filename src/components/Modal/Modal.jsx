@@ -13,9 +13,6 @@ export const Modal = () => {
             setMostrarModal(true);
             setTimeout(() => {
                 setMostrarModal(false);
-                setTimeout(() => {
-                    window.location.reload(); 
-                 }, 2000); 
              }, 5000);
 
         }

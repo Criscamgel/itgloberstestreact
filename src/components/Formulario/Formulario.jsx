@@ -3,10 +3,12 @@ import React, { useContext, useState } from 'react';
 import validator from 'validator';
 import { useForm } from '../../hooks/useForm';
 import { FormContext } from '../../contexts/FormContext';
+import { MenuContext } from '../../contexts/MenuContext';
 
 export const Formulario = () => {
 
     const { setDatos, setShowModal } = useContext(FormContext);
+    const { setAerolineaContext } = useContext( MenuContext );
     const [msgError, setMsgError] = useState({
         nombre: "",
         email: "",
@@ -34,6 +36,7 @@ export const Formulario = () => {
             setDatos(datosForm);
             setShowModal(true);
             console.log(datosForm);
+            setAerolineaContext(null);
             reset();
     }
 
