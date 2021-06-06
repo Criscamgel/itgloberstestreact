@@ -14,7 +14,7 @@ export const Menu = () => {
   }, [])
 
   const getMenus = async() => {
-    const resp = await axios.get(process.env.REACT_APP_DEV_MENU_API_URL);
+    const resp = await axios.get(process.env.REACT_APP_PROD_MENU_API_URL);
     const { data } = resp.data;
     setMenu(data);
   }
