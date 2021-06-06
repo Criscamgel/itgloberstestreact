@@ -1,19 +1,14 @@
-import React, { useEffect, useState } from 'react';
+import React, { useContext } from 'react';
+import { LoaderContext } from '../../contexts/LoaderContext';
 import './Loader.scss';
 
 export const Loader = () => {
 
-    const [show, setShow] = useState(false)
-
-    useEffect(() => {
-        setTimeout(() => { 
-            setShow(true);
-         }, 2000);
-    }, [])
+    const { showLoader } = useContext(LoaderContext);
 
     return (
         <>
-            <div className={ !show ? 'Loader fade-in' : 'Loader fade-out'  }>
+            <div className={ !showLoader ? 'Loader fade-in' : 'Loader fade-out'  }>
                 <div className="loader"></div>
             </div>
         </>

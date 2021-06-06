@@ -6,11 +6,13 @@ import { Menu } from '../Menu/Menu';
 import { MenuProvider } from '../../contexts/MenuContext';
 import { FormProvider } from '../../contexts/FormContext';
 import { Modal } from '../Modal/Modal';
+import { LoaderProvider } from '../../contexts/LoaderContext';
 
 export const App = () => {
   return (
       
       <FormProvider>
+        <LoaderProvider>
         <MenuProvider>
           <div className="superContenedor">
             <div className="externo">
@@ -24,6 +26,7 @@ export const App = () => {
             </div>
         </div>
         </MenuProvider>
+        </LoaderProvider>
       </FormProvider>
       
     
