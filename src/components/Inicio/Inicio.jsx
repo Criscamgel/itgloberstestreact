@@ -20,7 +20,7 @@ export const Inicio = () => {
             :
           <div className="conOpcion">
               <div className="contenidoConOpcion">
-                <p>“Hola, bienvenido, sabemos que quieres viajar con <b>{aerolineaContext}</b>, por favor
+                <p>Hola, bienvenido, sabemos que quieres viajar con <b>{aerolineaContext}</b>, por favor
                 diligencia el siguiente formulario: </p>
               </div>
               <hr />
