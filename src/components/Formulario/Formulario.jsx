@@ -48,7 +48,7 @@ export const Formulario = () => {
         
         mensajesError.email = validator.isEmpty(email) ? "El campo email debe estar diligenciado" : null;
         if (!validator.isEmpty(email)){
-            mensajesError.email = !validator.isEmail(email) ? "se ha diligenciado un email invalido, no escriba espacios ni caracteres especiales" : null;
+            mensajesError.email = !validator.isEmail(email) ? "se ha diligenciado un email invalido, no escriba espacios, caracteres especiales ni mayúsculas" : null;
         }
         
         mensajesError.celular = validator.isEmpty(celular) ? "El campo celular debe estar diligenciado" : null;

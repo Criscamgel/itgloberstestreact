@@ -4,8 +4,12 @@
     align-self: center;
     justify-self: center;
     padding: 30px;
+    display: grid;
     form{
         display: grid;
+        align-self: center;
+        justify-self: center;
+        max-width: 70%;
         input[type=text], input[type=number] {
             width: 100%;
             padding: 7px 20px;
