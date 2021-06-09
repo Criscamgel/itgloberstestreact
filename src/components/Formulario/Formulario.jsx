@@ -70,6 +70,7 @@ export const Formulario = () => {
 
     return (
         <div className="Formulario">
+            <div className="side"></div>
             <form onSubmit={ submitLogin } noValidate>
                 <label htmlFor="">Nombre Completo</label>
                 <input 
@@ -113,6 +114,7 @@ export const Formulario = () => {
 
                 <button type="submit">Enviar</button>
             </form>
+            <div className="side"></div>
         </div>
     )
 }
