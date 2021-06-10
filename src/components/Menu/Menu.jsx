@@ -18,7 +18,7 @@ export const Menu = () => {
   const getMenus = async() => {
 
     try {
-    const resp = await axios.get(process.env.REACT_APP_DEV_MENU_API_URL);
+    const resp = await axios.get(process.env.REACT_PROD_DEV_MENU_API_URL);
     const { data } = resp.data;
     data ? 
     activarLoader(data) 
